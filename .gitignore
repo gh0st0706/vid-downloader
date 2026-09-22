@@ -1,0 +1,19 @@
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Downloaded media
+downloads/
+*.mp4
+*.webm
+*.m4a
+*.mp3
+
+# Environment/secrets
+.env
+
+# VS Code
+.vscode/
