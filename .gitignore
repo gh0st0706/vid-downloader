@@ -11,7 +11,7 @@ downloads/
 *.webm
 *.m4a
 *.mp3
-
+*.part
 # Environment/secrets
 .env
 

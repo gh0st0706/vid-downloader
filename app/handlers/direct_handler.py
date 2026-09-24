@@ -1,6 +1,5 @@
 import app.handlers.ytdlp_handler as ytdlp_handler
 import app.handlers.direct_handler as direct_handler
-import app.handlers.hls_handler as hls_handler
 
 
 def get_video_info(url):
@@ -25,10 +24,5 @@ def get_video_info(url):
 def download_video(url, quality):
     if direct_handler.can_handle(url):
         return direct_handler.download(url)
-
-    if hls_handler.can_handle(url):
-        return hls_handler.download(url)
-
-    
 
     return ytdlp_handler.download(url, quality)
